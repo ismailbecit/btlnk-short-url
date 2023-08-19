@@ -13,7 +13,7 @@ const createBtlnkService = ({ apiKey, isSSL }) => {
     }
     // Create an Axios instance
     const axiosService = axios_1.default.create({
-        baseURL: "http://localhost:8089/api",
+        baseURL: "https://api.btlnk.com/api",
         headers: { Authorization: apiKey }
     });
     // Function to create a new link
@@ -63,11 +63,10 @@ const createBtlnkService = ({ apiKey, isSSL }) => {
     return { newLink, fetchLinks, fetchLinkReport };
 };
 exports.createBtlnkService = createBtlnkService;
-// // Example usage
-// const apiKey = "VlmGa4G3he6nwGs6";
-// const api = createBtlnkService({ apiKey, isSSL: true });
+// const apiKey = "test-api-key";
+// const api = createBtlnkService({ apiKey, sslControl: true });
 // (async () => {
 //   await api.newLink({ url: "https://example.com" })
 //     .then((res) => console.log(res))
-//     .catch((err) => console.log("Error:", err));
+//     .catch((err) => console.log("Hata:", err));
 // })();

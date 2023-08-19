@@ -1,6 +1,6 @@
 {
   "name": "btlnk-short-url",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "./dist/index.js",
   "types": "index.d.ts",
   "exports": {
@@ -32,5 +32,26 @@
       "^.+\\.tsx?$": "babel-jest"
     }
   },
-  "description": "btlnk-url-short is an npm package for URL shortening and management."
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ismailbecit/btlnk-short-url"
+  },
+  "description": "btlnk-url-short is an npm package for URL shortening and management.",
+  "keywords": [
+    "btlnk",
+    "url",
+    "short",
+    "link",
+    "google",
+    "short-url",
+    "link",
+    "short-link",
+    "react-short-url",
+    "nextjs-short-url",
+    "nodejs",
+    "reactjs",
+    "nextjs",
+    "bitly",
+    "tinurl"
+  ]
 }
