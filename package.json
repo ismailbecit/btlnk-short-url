@@ -1,7 +1,14 @@
 {
-  "name": "btlnk-url-short",
+  "name": "btlnk-short-url",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
     "test": "npx jest",
     "build": "tsc"

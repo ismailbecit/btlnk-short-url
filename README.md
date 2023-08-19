@@ -10,9 +10,9 @@ To obtain a custom API key, sign up at [btlnk.com](https://btlnk.com) and add yo
 
 #### Establish Connection with the Service
 
-```http
-  const key = "test-api-key"
-  const api = createBtlnkService({ apiKey:key });
+```javascript
+const key = "test-api-key";
+const api = createBtlnkService({ apiKey: key });
 ```
 
 | Parameter | Type      | Description                                                            |
@@ -22,8 +22,11 @@ To obtain a custom API key, sign up at [btlnk.com](https://btlnk.com) and add yo
 
 #### Create a New Link
 
-```http
-  await api.newLink({ url: "https://example.com" }).then((res) => res ).catch((err) => err);
+```javascript
+await api
+  .newLink({ url: "https://example.com" })
+  .then((res) => res)
+  .catch((err) => err);
 ```
 
 | Parameter | Type     | Description                  |
@@ -32,8 +35,11 @@ To obtain a custom API key, sign up at [btlnk.com](https://btlnk.com) and add yo
 
 #### Get Registered Links
 
-```http
-  await api.fetchLinks({ page:1 }).then((res) => res ).catch((err) => err);
+```javascript
+await api
+  .fetchLinks({ page: 1 })
+  .then((res) => res)
+  .catch((err) => err);
 ```
 
 | Parameter | Type     | Description                            |
@@ -42,8 +48,11 @@ To obtain a custom API key, sign up at [btlnk.com](https://btlnk.com) and add yo
 
 #### Get Link Report
 
-```http
-  await api.fetchLinkReport({ id:1, page:1 }).then((res) => res ).catch((err) => err);
+```javascript
+await api
+  .fetchLinkReport({ id: 1, page: 1 })
+  .then((res) => res)
+  .catch((err) => err);
 ```
 
 | Parameter | Type     | Description                           |

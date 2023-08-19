@@ -3,7 +3,7 @@ export type IBtlnkError = {
   data: null | string | object
 }
 
-export type IBtlnkNewLinkSucces = {
+export type IBtlnkNewLink = {
   url: string,
   destinationUrl: string
 }
@@ -15,7 +15,7 @@ export type IBtlnkFetchLinks = {
   CountOfTotalItems: number
 }
 
-export type fetchLinkReportSuccess = {
+export type fetchLinkReport = {
   Records: IBtlnkReport[]
   From: number,
   To: number,
